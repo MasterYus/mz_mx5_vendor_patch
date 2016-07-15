@@ -1,0 +1,25 @@
+# gralloc && hwcomposer - hardware layer. rest is userspace lib.so layer.
+#
+GL="/vendor/bin/pvrsrvctl \
+/vendor/etc/diracmobile.config /vendor/etc/dirac_types.xml \
+/vendor/lib/egl/libEGL_mtk.so /vendor/lib/egl/libGLESv1_CM_mtk.so /vendor/lib/egl/libGLESv2_mtk.so \
+/vendor/lib/hw/gralloc.mt6595.so \
+/vendor/lib/libglslcompiler.so /vendor/lib/libIMGegl.so /vendor/lib/liboclcompiler.so \
+/vendor/lib/libpvrANDROID_WSEGL.so /vendor/lib/libPVROCL.so /vendor/lib/libPVRScopeServices.so \
+/vendor/lib/libsrv_init.so /vendor/lib/libsrv_um.so /vendor/lib/libufwriter.so /vendor/lib/libusc.so \
+/lib/libm4u.so /lib/hw/hwcomposer.mt6595.so /lib/libbwc.so /lib/libgpu_aux.so /lib/libgralloc_extra.so \
+/lib/libdpframework.so /lib/libion.so /lib/libion_mtk.so /lib/libged.so /lib/libpq_prot.so \
+/lib/libgui_ext.so /lib/libui_ext.so /lib/librrc.so \
+/lib/libvcodecdrv.so /lib/libmp4enc_sa.ca7.so /lib/libvc1dec_sa.ca7.so /lib/libvcodec_oal.so \
+/lib/libvcodec_utility.so /lib/libvp8dec_sa.ca7.so /lib/libvp8enc_sa.ca7.so \
+/lib/libperfservice.so /lib/libperfservicenative.so \
+/bin/guiext-server /bin/pq \
+
+SENSORS="/lib/hw/sensors.mt6595.so \
+/lib/libinvensense_hal.so /lib/libmllite.so \
+/bin/geomagneticd /bin/magd /bin/orientationd \
+"
+
+GPS="/lib/hw/gps.default.so /bin/mtk_agpsd /bin/wifi2agps /xbin/mnld /xbin/BGW /xbin/MPED \
+/lib/libcurl.so /lib/libssladp.so /lib/libmnl.so /lib/libDR.so /lib/libfusion.so /lib/libmpe.driver.so /lib/libmpe.sensorlistener.so \
+"
